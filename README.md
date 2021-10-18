@@ -1,6 +1,6 @@
 # Evmos proto
 
-Compiled evmos' `protobuf` files ready to use with `python3.6+`.
+Compiled evmos' `protobuf` files ready to use with `python3.9+`.
 
 ## Installation
 
