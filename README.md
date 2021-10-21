@@ -1,5 +1,7 @@
 # Evmos proto
 
+[![PyPI version](https://badge.fury.io/py/evmosproto.svg)](https://badge.fury.io/py/evmosproto) [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/hanchon-live/evmosproto/master.svg)](https://results.pre-commit.ci/latest/github/hanchon-live/evmosproto/master)
+
 Compiled evmos' `protobuf` files ready to use with `python3.9+`.
 
 ## Installation
