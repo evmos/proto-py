@@ -24,7 +24,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z(github.com/tharsis/ethermint/x/evm/types',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x1c\x65thermint/evm/v1/query.proto\x12\x10\x65thermint.evm.v1\x1a\x14gogoproto/gogo.proto\x1a*cosmos/base/query/v1beta1/pagination.proto\x1a\x1cgoogle/api/annotations.proto\x1a\x1a\x65thermint/evm/v1/evm.proto\x1a\x19\x65thermint/evm/v1/tx.proto\"0\n\x13QueryAccountRequest\x12\x0f\n\x07\x61\x64\x64ress\x18\x01 \x01(\t:\x08\xe8\xa0\x1f\x00\x88\xa0\x1f\x00\"I\n\x14QueryAccountResponse\x12\x0f\n\x07\x62\x61lance\x18\x01 \x01(\t\x12\x11\n\tcode_hash\x18\x02 \x01(\t\x12\r\n\x05nonce\x18\x03 \x01(\x04\"6\n\x19QueryCosmosAccountRequest\x12\x0f\n\x07\x61\x64\x64ress\x18\x01 \x01(\t:\x08\xe8\xa0\x1f\x00\x88\xa0\x1f\x00\"^\n\x1aQueryCosmosAccountResponse\x12\x16\n\x0e\x63osmos_address\x18\x01 \x01(\t\x12\x10\n\x08sequence\x18\x02 \x01(\x04\x12\x16\n\x0e\x61\x63\x63ount_number\x18\x03 \x01(\x04\">\n\x1cQueryValidatorAccountRequest\x12\x14\n\x0c\x63ons_address\x18\x01 \x01(\t:\x08\xe8\xa0\x1f\x00\x88\xa0\x1f\x00\"b\n\x1dQueryValidatorAccountResponse\x12\x17\n\x0f\x61\x63\x63ount_address\x18\x01 \x01(\t\x12\x10\n\x08sequence\x18\x02 \x01(\x04\x12\x16\n\x0e\x61\x63\x63ount_number\x18\x03 \x01(\x04\"0\n\x13QueryBalanceRequest\x12\x0f\n\x07\x61\x64\x64ress\x18\x01 \x01(\t:\x08\xe8\xa0\x1f\x00\x88\xa0\x1f\x00\"\'\n\x14QueryBalanceResponse\x12\x0f\n\x07\x62\x61lance\x18\x01 \x01(\t\"=\n\x13QueryStorageRequest\x12\x0f\n\x07\x61\x64\x64ress\x18\x01 \x01(\t\x12\x0b\n\x03key\x18\x02 \x01(\t:\x08\xe8\xa0\x1f\x00\x88\xa0\x1f\x00\"%\n\x14QueryStorageResponse\x12\r\n\x05value\x18\x01 \x01(\t\"-\n\x10QueryCodeRequest\x12\x0f\n\x07\x61\x64\x64ress\x18\x01 \x01(\t:\x08\xe8\xa0\x1f\x00\x88\xa0\x1f\x00\"!\n\x11QueryCodeResponse\x12\x0c\n\x04\x63ode\x18\x01 \x01(\x0c\"h\n\x12QueryTxLogsRequest\x12\x0c\n\x04hash\x18\x01 \x01(\t\x12:\n\npagination\x18\x02 \x01(\x0b\x32&.cosmos.base.query.v1beta1.PageRequest:\x08\xe8\xa0\x1f\x00\x88\xa0\x1f\x00\"w\n\x13QueryTxLogsResponse\x12#\n\x04logs\x18\x01 \x03(\x0b\x32\x15.ethermint.evm.v1.Log\x12;\n\npagination\x18\x02 \x01(\x0b\x32\'.cosmos.base.query.v1beta1.PageResponse\"\x14\n\x12QueryParamsRequest\"E\n\x13QueryParamsResponse\x12.\n\x06params\x18\x01 \x01(\x0b\x32\x18.ethermint.evm.v1.ParamsB\x04\xc8\xde\x1f\x00\"m\n\x0e\x45thCallRequest\x12\x0c\n\x04\x61rgs\x18\x01 \x01(\x0c\x12\x0f\n\x07gas_cap\x18\x02 \x01(\x04\x12<\n\x08\x62\x61se_fee\x18\x03 \x01(\tB*\xda\xde\x1f&github.com/cosmos/cosmos-sdk/types.Int\"\"\n\x13\x45stimateGasResponse\x12\x0b\n\x03gas\x18\x01 \x01(\x04\"\x8a\x01\n\x13QueryTraceTxRequest\x12,\n\x03msg\x18\x01 \x01(\x0b\x32\x1f.ethermint.evm.v1.MsgEthereumTx\x12\x10\n\x08tx_index\x18\x02 \x01(\x04\x12\x33\n\x0ctrace_config\x18\x03 \x01(\x0b\x32\x1d.ethermint.evm.v1.TraceConfig\"$\n\x14QueryTraceTxResponse\x12\x0c\n\x04\x64\x61ta\x18\x01 \x01(\x0c\x32\xe6\n\n\x05Query\x12\x85\x01\n\x07\x41\x63\x63ount\x12%.ethermint.evm.v1.QueryAccountRequest\x1a&.ethermint.evm.v1.QueryAccountResponse\"+\x82\xd3\xe4\x93\x02%\x12#/ethermint/evm/v1/account/{address}\x12\x9e\x01\n\rCosmosAccount\x12+.ethermint.evm.v1.QueryCosmosAccountRequest\x1a,.ethermint.evm.v1.QueryCosmosAccountResponse\"2\x82\xd3\xe4\x93\x02,\x12*/ethermint/evm/v1/cosmos_account/{address}\x12\xaf\x01\n\x10ValidatorAccount\x12..ethermint.evm.v1.QueryValidatorAccountRequest\x1a/.ethermint.evm.v1.QueryValidatorAccountResponse\":\x82\xd3\xe4\x93\x02\x34\x12\x32/ethermint/evm/v1/validator_account/{cons_address}\x12\x86\x01\n\x07\x42\x61lance\x12%.ethermint.evm.v1.QueryBalanceRequest\x1a&.ethermint.evm.v1.QueryBalanceResponse\",\x82\xd3\xe4\x93\x02&\x12$/ethermint/evm/v1/balances/{address}\x12\x8b\x01\n\x07Storage\x12%.ethermint.evm.v1.QueryStorageRequest\x1a&.ethermint.evm.v1.QueryStorageResponse\"1\x82\xd3\xe4\x93\x02+\x12)/ethermint/evm/v1/storage/{address}/{key}\x12z\n\x04\x43ode\x12\".ethermint.evm.v1.QueryCodeRequest\x1a#.ethermint.evm.v1.QueryCodeResponse\")\x82\xd3\xe4\x93\x02#\x12!/ethermint/evm/v1/codes/{address}\x12w\n\x06Params\x12$.ethermint.evm.v1.QueryParamsRequest\x1a%.ethermint.evm.v1.QueryParamsResponse\" \x82\xd3\xe4\x93\x02\x1a\x12\x18/ethermint/evm/v1/params\x12x\n\x07\x45thCall\x12 .ethermint.evm.v1.EthCallRequest\x1a\'.ethermint.evm.v1.MsgEthereumTxResponse\"\"\x82\xd3\xe4\x93\x02\x1c\x12\x1a/ethermint/evm/v1/eth_call\x12~\n\x0b\x45stimateGas\x12 .ethermint.evm.v1.EthCallRequest\x1a%.ethermint.evm.v1.EstimateGasResponse\"&\x82\xd3\xe4\x93\x02 \x12\x1e/ethermint/evm/v1/estimate_gas\x12|\n\x07TraceTx\x12%.ethermint.evm.v1.QueryTraceTxRequest\x1a&.ethermint.evm.v1.QueryTraceTxResponse\"\"\x82\xd3\xe4\x93\x02\x1c\x12\x1a/ethermint/evm/v1/trace_txB*Z(github.com/tharsis/ethermint/x/evm/typesb\x06proto3'
+  serialized_pb=b'\n\x1c\x65thermint/evm/v1/query.proto\x12\x10\x65thermint.evm.v1\x1a\x14gogoproto/gogo.proto\x1a*cosmos/base/query/v1beta1/pagination.proto\x1a\x1cgoogle/api/annotations.proto\x1a\x1a\x65thermint/evm/v1/evm.proto\x1a\x19\x65thermint/evm/v1/tx.proto\"0\n\x13QueryAccountRequest\x12\x0f\n\x07\x61\x64\x64ress\x18\x01 \x01(\t:\x08\xe8\xa0\x1f\x00\x88\xa0\x1f\x00\"I\n\x14QueryAccountResponse\x12\x0f\n\x07\x62\x61lance\x18\x01 \x01(\t\x12\x11\n\tcode_hash\x18\x02 \x01(\t\x12\r\n\x05nonce\x18\x03 \x01(\x04\"6\n\x19QueryCosmosAccountRequest\x12\x0f\n\x07\x61\x64\x64ress\x18\x01 \x01(\t:\x08\xe8\xa0\x1f\x00\x88\xa0\x1f\x00\"^\n\x1aQueryCosmosAccountResponse\x12\x16\n\x0e\x63osmos_address\x18\x01 \x01(\t\x12\x10\n\x08sequence\x18\x02 \x01(\x04\x12\x16\n\x0e\x61\x63\x63ount_number\x18\x03 \x01(\x04\">\n\x1cQueryValidatorAccountRequest\x12\x14\n\x0c\x63ons_address\x18\x01 \x01(\t:\x08\xe8\xa0\x1f\x00\x88\xa0\x1f\x00\"b\n\x1dQueryValidatorAccountResponse\x12\x17\n\x0f\x61\x63\x63ount_address\x18\x01 \x01(\t\x12\x10\n\x08sequence\x18\x02 \x01(\x04\x12\x16\n\x0e\x61\x63\x63ount_number\x18\x03 \x01(\x04\"0\n\x13QueryBalanceRequest\x12\x0f\n\x07\x61\x64\x64ress\x18\x01 \x01(\t:\x08\xe8\xa0\x1f\x00\x88\xa0\x1f\x00\"\'\n\x14QueryBalanceResponse\x12\x0f\n\x07\x62\x61lance\x18\x01 \x01(\t\"=\n\x13QueryStorageRequest\x12\x0f\n\x07\x61\x64\x64ress\x18\x01 \x01(\t\x12\x0b\n\x03key\x18\x02 \x01(\t:\x08\xe8\xa0\x1f\x00\x88\xa0\x1f\x00\"%\n\x14QueryStorageResponse\x12\r\n\x05value\x18\x01 \x01(\t\"-\n\x10QueryCodeRequest\x12\x0f\n\x07\x61\x64\x64ress\x18\x01 \x01(\t:\x08\xe8\xa0\x1f\x00\x88\xa0\x1f\x00\"!\n\x11QueryCodeResponse\x12\x0c\n\x04\x63ode\x18\x01 \x01(\x0c\",\n\x12QueryTxLogsRequest\x12\x0c\n\x04hash\x18\x01 \x01(\t:\x08\xe8\xa0\x1f\x00\x88\xa0\x1f\x00\":\n\x13QueryTxLogsResponse\x12#\n\x04logs\x18\x01 \x03(\x0b\x32\x15.ethermint.evm.v1.Log\"k\n\x15QueryBlockLogsRequest\x12\x0c\n\x04hash\x18\x01 \x01(\t\x12:\n\npagination\x18\x02 \x01(\x0b\x32&.cosmos.base.query.v1beta1.PageRequest:\x08\xe8\xa0\x1f\x00\x88\xa0\x1f\x00\"\x8f\x01\n\x16QueryBlockLogsResponse\x12\x38\n\x07tx_logs\x18\x01 \x03(\x0b\x32!.ethermint.evm.v1.TransactionLogsB\x04\xc8\xde\x1f\x00\x12;\n\npagination\x18\x02 \x01(\x0b\x32\'.cosmos.base.query.v1beta1.PageResponse\"(\n\x16QueryBlockBloomRequest\x12\x0e\n\x06height\x18\x01 \x01(\x03\"(\n\x17QueryBlockBloomResponse\x12\r\n\x05\x62loom\x18\x01 \x01(\x0c\"\x14\n\x12QueryParamsRequest\"E\n\x13QueryParamsResponse\x12.\n\x06params\x18\x01 \x01(\x0b\x32\x18.ethermint.evm.v1.ParamsB\x04\xc8\xde\x1f\x00\"\x15\n\x13QueryBaseFeeRequest\"X\n\x14QueryBaseFeeResponse\x12@\n\x08\x62\x61se_fee\x18\x01 \x01(\tB.\xda\xde\x1f&github.com/cosmos/cosmos-sdk/types.Int\xc8\xde\x1f\x00\"\'\n\x17QueryStaticCallResponse\x12\x0c\n\x04\x64\x61ta\x18\x01 \x01(\x0c\"/\n\x0e\x45thCallRequest\x12\x0c\n\x04\x61rgs\x18\x01 \x01(\x0c\x12\x0f\n\x07gas_cap\x18\x02 \x01(\x04\"\"\n\x13\x45stimateGasResponse\x12\x0b\n\x03gas\x18\x01 \x01(\x04\x32\x82\r\n\x05Query\x12\x85\x01\n\x07\x41\x63\x63ount\x12%.ethermint.evm.v1.QueryAccountRequest\x1a&.ethermint.evm.v1.QueryAccountResponse\"+\x82\xd3\xe4\x93\x02%\x12#/ethermint/evm/v1/account/{address}\x12\x9e\x01\n\rCosmosAccount\x12+.ethermint.evm.v1.QueryCosmosAccountRequest\x1a,.ethermint.evm.v1.QueryCosmosAccountResponse\"2\x82\xd3\xe4\x93\x02,\x12*/ethermint/evm/v1/cosmos_account/{address}\x12\xaf\x01\n\x10ValidatorAccount\x12..ethermint.evm.v1.QueryValidatorAccountRequest\x1a/.ethermint.evm.v1.QueryValidatorAccountResponse\":\x82\xd3\xe4\x93\x02\x34\x12\x32/ethermint/evm/v1/validator_account/{cons_address}\x12\x86\x01\n\x07\x42\x61lance\x12%.ethermint.evm.v1.QueryBalanceRequest\x1a&.ethermint.evm.v1.QueryBalanceResponse\",\x82\xd3\xe4\x93\x02&\x12$/ethermint/evm/v1/balances/{address}\x12\x8b\x01\n\x07Storage\x12%.ethermint.evm.v1.QueryStorageRequest\x1a&.ethermint.evm.v1.QueryStorageResponse\"1\x82\xd3\xe4\x93\x02+\x12)/ethermint/evm/v1/storage/{address}/{key}\x12z\n\x04\x43ode\x12\".ethermint.evm.v1.QueryCodeRequest\x1a#.ethermint.evm.v1.QueryCodeResponse\")\x82\xd3\xe4\x93\x02#\x12!/ethermint/evm/v1/codes/{address}\x12\x7f\n\x06TxLogs\x12$.ethermint.evm.v1.QueryTxLogsRequest\x1a%.ethermint.evm.v1.QueryTxLogsResponse\"(\x82\xd3\xe4\x93\x02\"\x12 /ethermint/evm/v1/tx_logs/{hash}\x12\x8b\x01\n\tBlockLogs\x12\'.ethermint.evm.v1.QueryBlockLogsRequest\x1a(.ethermint.evm.v1.QueryBlockLogsResponse\"+\x82\xd3\xe4\x93\x02%\x12#/ethermint/evm/v1/block_logs/{hash}\x12\x88\x01\n\nBlockBloom\x12(.ethermint.evm.v1.QueryBlockBloomRequest\x1a).ethermint.evm.v1.QueryBlockBloomResponse\"%\x82\xd3\xe4\x93\x02\x1f\x12\x1d/ethermint/evm/v1/block_bloom\x12w\n\x06Params\x12$.ethermint.evm.v1.QueryParamsRequest\x1a%.ethermint.evm.v1.QueryParamsResponse\" \x82\xd3\xe4\x93\x02\x1a\x12\x18/ethermint/evm/v1/params\x12x\n\x07\x45thCall\x12 .ethermint.evm.v1.EthCallRequest\x1a\'.ethermint.evm.v1.MsgEthereumTxResponse\"\"\x82\xd3\xe4\x93\x02\x1c\x12\x1a/ethermint/evm/v1/eth_call\x12~\n\x0b\x45stimateGas\x12 .ethermint.evm.v1.EthCallRequest\x1a%.ethermint.evm.v1.EstimateGasResponse\"&\x82\xd3\xe4\x93\x02 \x12\x1e/ethermint/evm/v1/estimate_gasB*Z(github.com/tharsis/ethermint/x/evm/typesb\x06proto3'
   ,
   dependencies=[gogoproto_dot_gogo__pb2.DESCRIPTOR,cosmos_dot_base_dot_query_dot_v1beta1_dot_pagination__pb2.DESCRIPTOR,google_dot_api_dot_annotations__pb2.DESCRIPTOR,ethermint_dot_evm_dot_v1_dot_evm__pb2.DESCRIPTOR,ethermint_dot_evm_dot_v1_dot_tx__pb2.DESCRIPTOR,])
 
@@ -479,13 +479,6 @@ _QUERYTXLOGSREQUEST = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='pagination', full_name='ethermint.evm.v1.QueryTxLogsRequest.pagination', index=1,
-      number=2, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -499,7 +492,7 @@ _QUERYTXLOGSREQUEST = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=917,
-  serialized_end=1021,
+  serialized_end=961,
 )
 
 
@@ -518,8 +511,79 @@ _QUERYTXLOGSRESPONSE = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=963,
+  serialized_end=1021,
+)
+
+
+_QUERYBLOCKLOGSREQUEST = _descriptor.Descriptor(
+  name='QueryBlockLogsRequest',
+  full_name='ethermint.evm.v1.QueryBlockLogsRequest',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
     _descriptor.FieldDescriptor(
-      name='pagination', full_name='ethermint.evm.v1.QueryTxLogsResponse.pagination', index=1,
+      name='hash', full_name='ethermint.evm.v1.QueryBlockLogsRequest.hash', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='pagination', full_name='ethermint.evm.v1.QueryBlockLogsRequest.pagination', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=b'\350\240\037\000\210\240\037\000',
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1023,
+  serialized_end=1130,
+)
+
+
+_QUERYBLOCKLOGSRESPONSE = _descriptor.Descriptor(
+  name='QueryBlockLogsResponse',
+  full_name='ethermint.evm.v1.QueryBlockLogsResponse',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='tx_logs', full_name='ethermint.evm.v1.QueryBlockLogsResponse.tx_logs', index=0,
+      number=1, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'\310\336\037\000', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='pagination', full_name='ethermint.evm.v1.QueryBlockLogsResponse.pagination', index=1,
       number=2, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
@@ -537,8 +601,72 @@ _QUERYTXLOGSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1023,
-  serialized_end=1142,
+  serialized_start=1133,
+  serialized_end=1276,
+)
+
+
+_QUERYBLOCKBLOOMREQUEST = _descriptor.Descriptor(
+  name='QueryBlockBloomRequest',
+  full_name='ethermint.evm.v1.QueryBlockBloomRequest',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='height', full_name='ethermint.evm.v1.QueryBlockBloomRequest.height', index=0,
+      number=1, type=3, cpp_type=2, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1278,
+  serialized_end=1318,
+)
+
+
+_QUERYBLOCKBLOOMRESPONSE = _descriptor.Descriptor(
+  name='QueryBlockBloomResponse',
+  full_name='ethermint.evm.v1.QueryBlockBloomResponse',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='bloom', full_name='ethermint.evm.v1.QueryBlockBloomResponse.bloom', index=0,
+      number=1, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1320,
+  serialized_end=1360,
 )
 
 
@@ -562,8 +690,8 @@ _QUERYPARAMSREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1144,
-  serialized_end=1164,
+  serialized_start=1362,
+  serialized_end=1382,
 )
 
 
@@ -594,8 +722,97 @@ _QUERYPARAMSRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1166,
-  serialized_end=1235,
+  serialized_start=1384,
+  serialized_end=1453,
+)
+
+
+_QUERYBASEFEEREQUEST = _descriptor.Descriptor(
+  name='QueryBaseFeeRequest',
+  full_name='ethermint.evm.v1.QueryBaseFeeRequest',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1455,
+  serialized_end=1476,
+)
+
+
+_QUERYBASEFEERESPONSE = _descriptor.Descriptor(
+  name='QueryBaseFeeResponse',
+  full_name='ethermint.evm.v1.QueryBaseFeeResponse',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='base_fee', full_name='ethermint.evm.v1.QueryBaseFeeResponse.base_fee', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'\332\336\037&github.com/cosmos/cosmos-sdk/types.Int\310\336\037\000', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1478,
+  serialized_end=1566,
+)
+
+
+_QUERYSTATICCALLRESPONSE = _descriptor.Descriptor(
+  name='QueryStaticCallResponse',
+  full_name='ethermint.evm.v1.QueryStaticCallResponse',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='data', full_name='ethermint.evm.v1.QueryStaticCallResponse.data', index=0,
+      number=1, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1568,
+  serialized_end=1607,
 )
 
 
@@ -621,13 +838,6 @@ _ETHCALLREQUEST = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='base_fee', full_name='ethermint.evm.v1.EthCallRequest.base_fee', index=2,
-      number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=b'\332\336\037&github.com/cosmos/cosmos-sdk/types.Int', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -640,8 +850,8 @@ _ETHCALLREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1237,
-  serialized_end=1346,
+  serialized_start=1609,
+  serialized_end=1656,
 )
 
 
@@ -672,94 +882,15 @@ _ESTIMATEGASRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1348,
-  serialized_end=1382,
+  serialized_start=1658,
+  serialized_end=1692,
 )
 
-
-_QUERYTRACETXREQUEST = _descriptor.Descriptor(
-  name='QueryTraceTxRequest',
-  full_name='ethermint.evm.v1.QueryTraceTxRequest',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  create_key=_descriptor._internal_create_key,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='msg', full_name='ethermint.evm.v1.QueryTraceTxRequest.msg', index=0,
-      number=1, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='tx_index', full_name='ethermint.evm.v1.QueryTraceTxRequest.tx_index', index=1,
-      number=2, type=4, cpp_type=4, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='trace_config', full_name='ethermint.evm.v1.QueryTraceTxRequest.trace_config', index=2,
-      number=3, type=11, cpp_type=10, label=1,
-      has_default_value=False, default_value=None,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1385,
-  serialized_end=1523,
-)
-
-
-_QUERYTRACETXRESPONSE = _descriptor.Descriptor(
-  name='QueryTraceTxResponse',
-  full_name='ethermint.evm.v1.QueryTraceTxResponse',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  create_key=_descriptor._internal_create_key,
-  fields=[
-    _descriptor.FieldDescriptor(
-      name='data', full_name='ethermint.evm.v1.QueryTraceTxResponse.data', index=0,
-      number=1, type=12, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"",
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=1525,
-  serialized_end=1561,
-)
-
-_QUERYTXLOGSREQUEST.fields_by_name['pagination'].message_type = cosmos_dot_base_dot_query_dot_v1beta1_dot_pagination__pb2._PAGEREQUEST
 _QUERYTXLOGSRESPONSE.fields_by_name['logs'].message_type = ethermint_dot_evm_dot_v1_dot_evm__pb2._LOG
-_QUERYTXLOGSRESPONSE.fields_by_name['pagination'].message_type = cosmos_dot_base_dot_query_dot_v1beta1_dot_pagination__pb2._PAGERESPONSE
+_QUERYBLOCKLOGSREQUEST.fields_by_name['pagination'].message_type = cosmos_dot_base_dot_query_dot_v1beta1_dot_pagination__pb2._PAGEREQUEST
+_QUERYBLOCKLOGSRESPONSE.fields_by_name['tx_logs'].message_type = ethermint_dot_evm_dot_v1_dot_evm__pb2._TRANSACTIONLOGS
+_QUERYBLOCKLOGSRESPONSE.fields_by_name['pagination'].message_type = cosmos_dot_base_dot_query_dot_v1beta1_dot_pagination__pb2._PAGERESPONSE
 _QUERYPARAMSRESPONSE.fields_by_name['params'].message_type = ethermint_dot_evm_dot_v1_dot_evm__pb2._PARAMS
-_QUERYTRACETXREQUEST.fields_by_name['msg'].message_type = ethermint_dot_evm_dot_v1_dot_tx__pb2._MSGETHEREUMTX
-_QUERYTRACETXREQUEST.fields_by_name['trace_config'].message_type = ethermint_dot_evm_dot_v1_dot_evm__pb2._TRACECONFIG
 DESCRIPTOR.message_types_by_name['QueryAccountRequest'] = _QUERYACCOUNTREQUEST
 DESCRIPTOR.message_types_by_name['QueryAccountResponse'] = _QUERYACCOUNTRESPONSE
 DESCRIPTOR.message_types_by_name['QueryCosmosAccountRequest'] = _QUERYCOSMOSACCOUNTREQUEST
@@ -774,12 +905,17 @@ DESCRIPTOR.message_types_by_name['QueryCodeRequest'] = _QUERYCODEREQUEST
 DESCRIPTOR.message_types_by_name['QueryCodeResponse'] = _QUERYCODERESPONSE
 DESCRIPTOR.message_types_by_name['QueryTxLogsRequest'] = _QUERYTXLOGSREQUEST
 DESCRIPTOR.message_types_by_name['QueryTxLogsResponse'] = _QUERYTXLOGSRESPONSE
+DESCRIPTOR.message_types_by_name['QueryBlockLogsRequest'] = _QUERYBLOCKLOGSREQUEST
+DESCRIPTOR.message_types_by_name['QueryBlockLogsResponse'] = _QUERYBLOCKLOGSRESPONSE
+DESCRIPTOR.message_types_by_name['QueryBlockBloomRequest'] = _QUERYBLOCKBLOOMREQUEST
+DESCRIPTOR.message_types_by_name['QueryBlockBloomResponse'] = _QUERYBLOCKBLOOMRESPONSE
 DESCRIPTOR.message_types_by_name['QueryParamsRequest'] = _QUERYPARAMSREQUEST
 DESCRIPTOR.message_types_by_name['QueryParamsResponse'] = _QUERYPARAMSRESPONSE
+DESCRIPTOR.message_types_by_name['QueryBaseFeeRequest'] = _QUERYBASEFEEREQUEST
+DESCRIPTOR.message_types_by_name['QueryBaseFeeResponse'] = _QUERYBASEFEERESPONSE
+DESCRIPTOR.message_types_by_name['QueryStaticCallResponse'] = _QUERYSTATICCALLRESPONSE
 DESCRIPTOR.message_types_by_name['EthCallRequest'] = _ETHCALLREQUEST
 DESCRIPTOR.message_types_by_name['EstimateGasResponse'] = _ESTIMATEGASRESPONSE
-DESCRIPTOR.message_types_by_name['QueryTraceTxRequest'] = _QUERYTRACETXREQUEST
-DESCRIPTOR.message_types_by_name['QueryTraceTxResponse'] = _QUERYTRACETXRESPONSE
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 QueryAccountRequest = _reflection.GeneratedProtocolMessageType('QueryAccountRequest', (_message.Message,), {
@@ -880,6 +1016,34 @@ QueryTxLogsResponse = _reflection.GeneratedProtocolMessageType('QueryTxLogsRespo
   })
 _sym_db.RegisterMessage(QueryTxLogsResponse)
 
+QueryBlockLogsRequest = _reflection.GeneratedProtocolMessageType('QueryBlockLogsRequest', (_message.Message,), {
+  'DESCRIPTOR' : _QUERYBLOCKLOGSREQUEST,
+  '__module__' : 'ethermint.evm.v1.query_pb2'
+  # @@protoc_insertion_point(class_scope:ethermint.evm.v1.QueryBlockLogsRequest)
+  })
+_sym_db.RegisterMessage(QueryBlockLogsRequest)
+
+QueryBlockLogsResponse = _reflection.GeneratedProtocolMessageType('QueryBlockLogsResponse', (_message.Message,), {
+  'DESCRIPTOR' : _QUERYBLOCKLOGSRESPONSE,
+  '__module__' : 'ethermint.evm.v1.query_pb2'
+  # @@protoc_insertion_point(class_scope:ethermint.evm.v1.QueryBlockLogsResponse)
+  })
+_sym_db.RegisterMessage(QueryBlockLogsResponse)
+
+QueryBlockBloomRequest = _reflection.GeneratedProtocolMessageType('QueryBlockBloomRequest', (_message.Message,), {
+  'DESCRIPTOR' : _QUERYBLOCKBLOOMREQUEST,
+  '__module__' : 'ethermint.evm.v1.query_pb2'
+  # @@protoc_insertion_point(class_scope:ethermint.evm.v1.QueryBlockBloomRequest)
+  })
+_sym_db.RegisterMessage(QueryBlockBloomRequest)
+
+QueryBlockBloomResponse = _reflection.GeneratedProtocolMessageType('QueryBlockBloomResponse', (_message.Message,), {
+  'DESCRIPTOR' : _QUERYBLOCKBLOOMRESPONSE,
+  '__module__' : 'ethermint.evm.v1.query_pb2'
+  # @@protoc_insertion_point(class_scope:ethermint.evm.v1.QueryBlockBloomResponse)
+  })
+_sym_db.RegisterMessage(QueryBlockBloomResponse)
+
 QueryParamsRequest = _reflection.GeneratedProtocolMessageType('QueryParamsRequest', (_message.Message,), {
   'DESCRIPTOR' : _QUERYPARAMSREQUEST,
   '__module__' : 'ethermint.evm.v1.query_pb2'
@@ -893,6 +1057,27 @@ QueryParamsResponse = _reflection.GeneratedProtocolMessageType('QueryParamsRespo
   # @@protoc_insertion_point(class_scope:ethermint.evm.v1.QueryParamsResponse)
   })
 _sym_db.RegisterMessage(QueryParamsResponse)
+
+QueryBaseFeeRequest = _reflection.GeneratedProtocolMessageType('QueryBaseFeeRequest', (_message.Message,), {
+  'DESCRIPTOR' : _QUERYBASEFEEREQUEST,
+  '__module__' : 'ethermint.evm.v1.query_pb2'
+  # @@protoc_insertion_point(class_scope:ethermint.evm.v1.QueryBaseFeeRequest)
+  })
+_sym_db.RegisterMessage(QueryBaseFeeRequest)
+
+QueryBaseFeeResponse = _reflection.GeneratedProtocolMessageType('QueryBaseFeeResponse', (_message.Message,), {
+  'DESCRIPTOR' : _QUERYBASEFEERESPONSE,
+  '__module__' : 'ethermint.evm.v1.query_pb2'
+  # @@protoc_insertion_point(class_scope:ethermint.evm.v1.QueryBaseFeeResponse)
+  })
+_sym_db.RegisterMessage(QueryBaseFeeResponse)
+
+QueryStaticCallResponse = _reflection.GeneratedProtocolMessageType('QueryStaticCallResponse', (_message.Message,), {
+  'DESCRIPTOR' : _QUERYSTATICCALLRESPONSE,
+  '__module__' : 'ethermint.evm.v1.query_pb2'
+  # @@protoc_insertion_point(class_scope:ethermint.evm.v1.QueryStaticCallResponse)
+  })
+_sym_db.RegisterMessage(QueryStaticCallResponse)
 
 EthCallRequest = _reflection.GeneratedProtocolMessageType('EthCallRequest', (_message.Message,), {
   'DESCRIPTOR' : _ETHCALLREQUEST,
@@ -908,20 +1093,6 @@ EstimateGasResponse = _reflection.GeneratedProtocolMessageType('EstimateGasRespo
   })
 _sym_db.RegisterMessage(EstimateGasResponse)
 
-QueryTraceTxRequest = _reflection.GeneratedProtocolMessageType('QueryTraceTxRequest', (_message.Message,), {
-  'DESCRIPTOR' : _QUERYTRACETXREQUEST,
-  '__module__' : 'ethermint.evm.v1.query_pb2'
-  # @@protoc_insertion_point(class_scope:ethermint.evm.v1.QueryTraceTxRequest)
-  })
-_sym_db.RegisterMessage(QueryTraceTxRequest)
-
-QueryTraceTxResponse = _reflection.GeneratedProtocolMessageType('QueryTraceTxResponse', (_message.Message,), {
-  'DESCRIPTOR' : _QUERYTRACETXRESPONSE,
-  '__module__' : 'ethermint.evm.v1.query_pb2'
-  # @@protoc_insertion_point(class_scope:ethermint.evm.v1.QueryTraceTxResponse)
-  })
-_sym_db.RegisterMessage(QueryTraceTxResponse)
-
 
 DESCRIPTOR._options = None
 _QUERYACCOUNTREQUEST._options = None
@@ -931,8 +1102,10 @@ _QUERYBALANCEREQUEST._options = None
 _QUERYSTORAGEREQUEST._options = None
 _QUERYCODEREQUEST._options = None
 _QUERYTXLOGSREQUEST._options = None
+_QUERYBLOCKLOGSREQUEST._options = None
+_QUERYBLOCKLOGSRESPONSE.fields_by_name['tx_logs']._options = None
 _QUERYPARAMSRESPONSE.fields_by_name['params']._options = None
-_ETHCALLREQUEST.fields_by_name['base_fee']._options = None
+_QUERYBASEFEERESPONSE.fields_by_name['base_fee']._options = None
 
 _QUERY = _descriptor.ServiceDescriptor(
   name='Query',
@@ -941,8 +1114,8 @@ _QUERY = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_start=1564,
-  serialized_end=2946,
+  serialized_start=1695,
+  serialized_end=3361,
   methods=[
   _descriptor.MethodDescriptor(
     name='Account',
@@ -1005,9 +1178,39 @@ _QUERY = _descriptor.ServiceDescriptor(
     create_key=_descriptor._internal_create_key,
   ),
   _descriptor.MethodDescriptor(
+    name='TxLogs',
+    full_name='ethermint.evm.v1.Query.TxLogs',
+    index=6,
+    containing_service=None,
+    input_type=_QUERYTXLOGSREQUEST,
+    output_type=_QUERYTXLOGSRESPONSE,
+    serialized_options=b'\202\323\344\223\002\"\022 /ethermint/evm/v1/tx_logs/{hash}',
+    create_key=_descriptor._internal_create_key,
+  ),
+  _descriptor.MethodDescriptor(
+    name='BlockLogs',
+    full_name='ethermint.evm.v1.Query.BlockLogs',
+    index=7,
+    containing_service=None,
+    input_type=_QUERYBLOCKLOGSREQUEST,
+    output_type=_QUERYBLOCKLOGSRESPONSE,
+    serialized_options=b'\202\323\344\223\002%\022#/ethermint/evm/v1/block_logs/{hash}',
+    create_key=_descriptor._internal_create_key,
+  ),
+  _descriptor.MethodDescriptor(
+    name='BlockBloom',
+    full_name='ethermint.evm.v1.Query.BlockBloom',
+    index=8,
+    containing_service=None,
+    input_type=_QUERYBLOCKBLOOMREQUEST,
+    output_type=_QUERYBLOCKBLOOMRESPONSE,
+    serialized_options=b'\202\323\344\223\002\037\022\035/ethermint/evm/v1/block_bloom',
+    create_key=_descriptor._internal_create_key,
+  ),
+  _descriptor.MethodDescriptor(
     name='Params',
     full_name='ethermint.evm.v1.Query.Params',
-    index=6,
+    index=9,
     containing_service=None,
     input_type=_QUERYPARAMSREQUEST,
     output_type=_QUERYPARAMSRESPONSE,
@@ -1017,7 +1220,7 @@ _QUERY = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='EthCall',
     full_name='ethermint.evm.v1.Query.EthCall',
-    index=7,
+    index=10,
     containing_service=None,
     input_type=_ETHCALLREQUEST,
     output_type=ethermint_dot_evm_dot_v1_dot_tx__pb2._MSGETHEREUMTXRESPONSE,
@@ -1027,21 +1230,11 @@ _QUERY = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='EstimateGas',
     full_name='ethermint.evm.v1.Query.EstimateGas',
-    index=8,
+    index=11,
     containing_service=None,
     input_type=_ETHCALLREQUEST,
     output_type=_ESTIMATEGASRESPONSE,
     serialized_options=b'\202\323\344\223\002 \022\036/ethermint/evm/v1/estimate_gas',
-    create_key=_descriptor._internal_create_key,
-  ),
-  _descriptor.MethodDescriptor(
-    name='TraceTx',
-    full_name='ethermint.evm.v1.Query.TraceTx',
-    index=9,
-    containing_service=None,
-    input_type=_QUERYTRACETXREQUEST,
-    output_type=_QUERYTRACETXRESPONSE,
-    serialized_options=b'\202\323\344\223\002\034\022\032/ethermint/evm/v1/trace_tx',
     create_key=_descriptor._internal_create_key,
   ),
 ])
