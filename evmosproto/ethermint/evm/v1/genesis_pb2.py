@@ -21,7 +21,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z(github.com/tharsis/ethermint/x/evm/types',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x1e\x65thermint/evm/v1/genesis.proto\x12\x10\x65thermint.evm.v1\x1a\x14gogoproto/gogo.proto\x1a\x1a\x65thermint/evm/v1/evm.proto\"x\n\x0cGenesisState\x12\x38\n\x08\x61\x63\x63ounts\x18\x01 \x03(\x0b\x32 .ethermint.evm.v1.GenesisAccountB\x04\xc8\xde\x1f\x00\x12.\n\x06params\x18\x02 \x01(\x0b\x32\x18.ethermint.evm.v1.ParamsB\x04\xc8\xde\x1f\x00\"j\n\x0eGenesisAccount\x12\x0f\n\x07\x61\x64\x64ress\x18\x01 \x01(\t\x12\x0c\n\x04\x63ode\x18\x02 \x01(\t\x12\x39\n\x07storage\x18\x03 \x03(\x0b\x32\x17.ethermint.evm.v1.StateB\x0f\xc8\xde\x1f\x00\xaa\xdf\x1f\x07StorageB*Z(github.com/tharsis/ethermint/x/evm/typesb\x06proto3'
+  serialized_pb=b'\n\x1e\x65thermint/evm/v1/genesis.proto\x12\x10\x65thermint.evm.v1\x1a\x14gogoproto/gogo.proto\x1a\x1a\x65thermint/evm/v1/evm.proto\"\xc6\x01\n\x0cGenesisState\x12\x38\n\x08\x61\x63\x63ounts\x18\x01 \x03(\x0b\x32 .ethermint.evm.v1.GenesisAccountB\x04\xc8\xde\x1f\x00\x12.\n\x06params\x18\x03 \x01(\x0b\x32\x18.ethermint.evm.v1.ParamsB\x04\xc8\xde\x1f\x00\x12L\n\x08txs_logs\x18\x04 \x03(\x0b\x32!.ethermint.evm.v1.TransactionLogsB\x17\xf2\xde\x1f\x0fyaml:\"txs_logs\"\xc8\xde\x1f\x00\"j\n\x0eGenesisAccount\x12\x0f\n\x07\x61\x64\x64ress\x18\x01 \x01(\t\x12\x0c\n\x04\x63ode\x18\x02 \x01(\t\x12\x39\n\x07storage\x18\x03 \x03(\x0b\x32\x17.ethermint.evm.v1.StateB\x0f\xc8\xde\x1f\x00\xaa\xdf\x1f\x07StorageB*Z(github.com/tharsis/ethermint/x/evm/typesb\x06proto3'
   ,
   dependencies=[gogoproto_dot_gogo__pb2.DESCRIPTOR,ethermint_dot_evm_dot_v1_dot_evm__pb2.DESCRIPTOR,])
 
@@ -45,11 +45,18 @@ _GENESISSTATE = _descriptor.Descriptor(
       serialized_options=b'\310\336\037\000', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='params', full_name='ethermint.evm.v1.GenesisState.params', index=1,
-      number=2, type=11, cpp_type=10, label=1,
+      number=3, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=b'\310\336\037\000', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='txs_logs', full_name='ethermint.evm.v1.GenesisState.txs_logs', index=2,
+      number=4, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=b'\362\336\037\017yaml:\"txs_logs\"\310\336\037\000', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -62,8 +69,8 @@ _GENESISSTATE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=102,
-  serialized_end=222,
+  serialized_start=103,
+  serialized_end=301,
 )
 
 
@@ -108,12 +115,13 @@ _GENESISACCOUNT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=224,
-  serialized_end=330,
+  serialized_start=303,
+  serialized_end=409,
 )
 
 _GENESISSTATE.fields_by_name['accounts'].message_type = _GENESISACCOUNT
 _GENESISSTATE.fields_by_name['params'].message_type = ethermint_dot_evm_dot_v1_dot_evm__pb2._PARAMS
+_GENESISSTATE.fields_by_name['txs_logs'].message_type = ethermint_dot_evm_dot_v1_dot_evm__pb2._TRANSACTIONLOGS
 _GENESISACCOUNT.fields_by_name['storage'].message_type = ethermint_dot_evm_dot_v1_dot_evm__pb2._STATE
 DESCRIPTOR.message_types_by_name['GenesisState'] = _GENESISSTATE
 DESCRIPTOR.message_types_by_name['GenesisAccount'] = _GENESISACCOUNT
@@ -137,5 +145,6 @@ _sym_db.RegisterMessage(GenesisAccount)
 DESCRIPTOR._options = None
 _GENESISSTATE.fields_by_name['accounts']._options = None
 _GENESISSTATE.fields_by_name['params']._options = None
+_GENESISSTATE.fields_by_name['txs_logs']._options = None
 _GENESISACCOUNT.fields_by_name['storage']._options = None
 # @@protoc_insertion_point(module_scope)

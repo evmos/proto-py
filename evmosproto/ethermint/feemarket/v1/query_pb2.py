@@ -22,7 +22,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=b'Z.github.com/tharsis/ethermint/x/feemarket/types',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\"ethermint/feemarket/v1/query.proto\x12\x16\x65thermint.feemarket.v1\x1a\x14gogoproto/gogo.proto\x1a\x1cgoogle/api/annotations.proto\x1a&ethermint/feemarket/v1/feemarket.proto\"\x14\n\x12QueryParamsRequest\"K\n\x13QueryParamsResponse\x12\x34\n\x06params\x18\x01 \x01(\x0b\x32\x1e.ethermint.feemarket.v1.ParamsB\x04\xc8\xde\x1f\x00\"\x15\n\x13QueryBaseFeeRequest\"T\n\x14QueryBaseFeeResponse\x12<\n\x08\x62\x61se_fee\x18\x01 \x01(\tB*\xda\xde\x1f&github.com/cosmos/cosmos-sdk/types.Int\"\x16\n\x14QueryBlockGasRequest\"$\n\x15QueryBlockGasResponse\x12\x0b\n\x03gas\x18\x01 \x01(\x03\x32\xa7\x03\n\x05Query\x12\x83\x01\n\x06Params\x12*.ethermint.feemarket.v1.QueryParamsRequest\x1a+.ethermint.feemarket.v1.QueryParamsResponse\" \x82\xd3\xe4\x93\x02\x1a\x12\x18/feemarket/evm/v1/params\x12\x88\x01\n\x07\x42\x61seFee\x12+.ethermint.feemarket.v1.QueryBaseFeeRequest\x1a,.ethermint.feemarket.v1.QueryBaseFeeResponse\"\"\x82\xd3\xe4\x93\x02\x1c\x12\x1a/feemarket/evm/v1/base_fee\x12\x8c\x01\n\x08\x42lockGas\x12,.ethermint.feemarket.v1.QueryBlockGasRequest\x1a-.ethermint.feemarket.v1.QueryBlockGasResponse\"#\x82\xd3\xe4\x93\x02\x1d\x12\x1b/feemarket/evm/v1/block_gasB0Z.github.com/tharsis/ethermint/x/feemarket/typesb\x06proto3'
+  serialized_pb=b'\n\"ethermint/feemarket/v1/query.proto\x12\x16\x65thermint.feemarket.v1\x1a\x14gogoproto/gogo.proto\x1a\x1cgoogle/api/annotations.proto\x1a&ethermint/feemarket/v1/feemarket.proto\"\x14\n\x12QueryParamsRequest\"K\n\x13QueryParamsResponse\x12\x34\n\x06params\x18\x01 \x01(\x0b\x32\x1e.ethermint.feemarket.v1.ParamsB\x04\xc8\xde\x1f\x00\"\x15\n\x13QueryBaseFeeRequest\"X\n\x14QueryBaseFeeResponse\x12@\n\x08\x62\x61se_fee\x18\x01 \x01(\tB.\xda\xde\x1f&github.com/cosmos/cosmos-sdk/types.Int\xc8\xde\x1f\x00\"\x16\n\x14QueryBlockGasRequest\"$\n\x15QueryBlockGasResponse\x12\x0b\n\x03gas\x18\x01 \x01(\x03\x32\xa7\x03\n\x05Query\x12\x83\x01\n\x06Params\x12*.ethermint.feemarket.v1.QueryParamsRequest\x1a+.ethermint.feemarket.v1.QueryParamsResponse\" \x82\xd3\xe4\x93\x02\x1a\x12\x18/feemarket/evm/v1/params\x12\x88\x01\n\x07\x42\x61seFee\x12+.ethermint.feemarket.v1.QueryBaseFeeRequest\x1a,.ethermint.feemarket.v1.QueryBaseFeeResponse\"\"\x82\xd3\xe4\x93\x02\x1c\x12\x1a/feemarket/evm/v1/base_fee\x12\x8c\x01\n\x08\x42lockGas\x12,.ethermint.feemarket.v1.QueryBlockGasRequest\x1a-.ethermint.feemarket.v1.QueryBlockGasResponse\"#\x82\xd3\xe4\x93\x02\x1d\x12\x1b/feemarket/evm/v1/block_gasB0Z.github.com/tharsis/ethermint/x/feemarket/typesb\x06proto3'
   ,
   dependencies=[gogoproto_dot_gogo__pb2.DESCRIPTOR,google_dot_api_dot_annotations__pb2.DESCRIPTOR,ethermint_dot_feemarket_dot_v1_dot_feemarket__pb2.DESCRIPTOR,])
 
@@ -125,7 +125,7 @@ _QUERYBASEFEERESPONSE = _descriptor.Descriptor(
       has_default_value=False, default_value=b"".decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      serialized_options=b'\332\336\037&github.com/cosmos/cosmos-sdk/types.Int', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+      serialized_options=b'\332\336\037&github.com/cosmos/cosmos-sdk/types.Int\310\336\037\000', file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -139,7 +139,7 @@ _QUERYBASEFEERESPONSE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=276,
-  serialized_end=360,
+  serialized_end=364,
 )
 
 
@@ -163,8 +163,8 @@ _QUERYBLOCKGASREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=362,
-  serialized_end=384,
+  serialized_start=366,
+  serialized_end=388,
 )
 
 
@@ -195,8 +195,8 @@ _QUERYBLOCKGASRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=386,
-  serialized_end=422,
+  serialized_start=390,
+  serialized_end=426,
 )
 
 _QUERYPARAMSRESPONSE.fields_by_name['params'].message_type = ethermint_dot_feemarket_dot_v1_dot_feemarket__pb2._PARAMS
@@ -262,8 +262,8 @@ _QUERY = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_start=425,
-  serialized_end=848,
+  serialized_start=429,
+  serialized_end=852,
   methods=[
   _descriptor.MethodDescriptor(
     name='Params',

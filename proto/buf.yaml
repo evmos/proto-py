@@ -1,4 +1,7 @@
 version: v1
+build:
+  excludes:
+    - google/protobuf
 lint:
   use:
     - DEFAULT
@@ -14,6 +17,17 @@ lint:
     - RPC_RESPONSE_STANDARD_NAME
     - RPC_REQUEST_RESPONSE_UNIQUE
     - COMMENT_MESSAGE
+  ignore:
+    - tendermint
+    - gogoproto
+    - cosmos_proto
+    - google
+    - confio
 breaking:
   use:
     - FILE
+  ignore:
+    - tendermint
+    - gogoproto
+    - cosmos_proto
+    - google
