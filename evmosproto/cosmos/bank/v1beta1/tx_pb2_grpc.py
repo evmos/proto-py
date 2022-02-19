@@ -32,14 +32,16 @@ class MsgServicer(object):
     """
 
     def Send(self, request, context):
-        """Send defines a method for sending coins from evmosproto.one account to another account.
+        """Send defines a method for sending coins from evmosproto.one account to another
+        account.
         """
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
     def MultiSend(self, request, context):
-        """MultiSend defines a method for sending coins from evmosproto.some accounts to other accounts.
+        """MultiSend defines a method for sending coins from evmosproto.some accounts to other
+        accounts.
         """
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')

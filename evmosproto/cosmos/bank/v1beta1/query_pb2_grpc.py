@@ -99,7 +99,8 @@ class QueryServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def DenomsMetadata(self, request, context):
-        """DenomsMetadata queries the client metadata for all registered coin denominations.
+        """DenomsMetadata queries the client metadata for all registered coin
+        denominations.
         """
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')

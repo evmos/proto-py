@@ -27,8 +27,8 @@ class MsgServicer(object):
     """
 
     def SubmitEvidence(self, request, context):
-        """SubmitEvidence submits an arbitrary Evidence of misbehavior such as equivocation or
-        counterfactual signing.
+        """SubmitEvidence submits an arbitrary Evidence of misbehavior such as
+        equivocation or counterfactual signing.
         """
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')

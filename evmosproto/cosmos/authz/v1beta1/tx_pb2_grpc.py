@@ -56,8 +56,8 @@ class MsgServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def Revoke(self, request, context):
-        """Revoke revokes any authorization corresponding to the provided method name on the
-        granter's account that has been granted to the grantee.
+        """Revoke revokes any authorization corresponding to the provided method name
+        on the granter's account that has been granted to the grantee.
         """
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
