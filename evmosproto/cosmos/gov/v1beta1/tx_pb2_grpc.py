@@ -56,7 +56,8 @@ class MsgServicer(object):
         raise NotImplementedError('Method not implemented!')
 
     def VoteWeighted(self, request, context):
-        """VoteWeighted defines a method to add a weighted vote on a specific proposal.
+        """VoteWeighted defines a method to add a weighted vote on a specific
+        proposal.
         """
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
